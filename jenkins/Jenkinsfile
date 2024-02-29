@@ -6,7 +6,10 @@ pipeline {
         }
     }
 
-    tools {nodejs "NodeJS"}
+    tools {
+        docker "docker"
+        nodejs "NodeJS"
+    }
 
     environment {
         CI = 'true'
